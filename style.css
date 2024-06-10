@@ -1,0 +1,410 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+/* Nav style start */
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+}
+
+.container img {
+  margin: 25px 0px;
+}
+
+.container ul {
+  display: flex;
+  list-style: none;
+}
+
+.container ul li {
+  margin: 13px 18px;
+  font-size: 15px;
+}
+
+.nav-icons {
+  margin: 25px 0px;
+}
+
+.nav-icons i {
+  margin: 0px 10px;
+}
+/* Nav style end  */
+
+/* Hero style start */
+
+.hero-cont {
+  background-image: url(Ash-hero\ background\ img.avif);
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+  color: whitesmoke;
+  padding: 100px 0 0 0;
+  margin-top: 200px 0 0 0 ;
+}
+
+.hero-text{
+  padding: 50px;
+}
+
+.hero-text h2 {
+  font-size: 60px;
+  margin-bottom: auto;
+}
+
+.hero-text h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+button {
+  padding: 15px 25px;
+  background-color: black;
+  color: whitesmoke;
+  border: black;
+}
+/*  Hero style end */
+
+/* img section start */
+.img-section {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.img-section img {
+  width: 100%;
+}
+
+.details {
+  text-align: center;
+}
+/* img section end */
+
+/* New Arrivals start*/
+
+.arrivals {
+  margin: 100px 0 0 0;
+}
+
+.arrivals h2 {
+  text-align: center;
+}
+.new-arrivals {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* New Arrivals end */
+
+/* Shop olympiad start */
+
+.olympiad {
+  margin: 100px 0 0 0;
+}
+
+.olympiad h2 {
+  text-align: center;
+}
+
+.shopolympiad {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Shop olympiad end */
+
+/* Shop Bestsellers start */
+
+.bestsellers {
+  margin: 100px 0 0 0;
+}
+
+.bestsellers h2 {
+  text-align: center;
+}
+
+.shopbestsellers {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* Shop Bestsellers end */
+
+/* Shop Coats & Jackets start */
+
+.jackets {
+  margin: 100px 0 0 0;
+}
+
+.jackets h2 {
+  text-align: center;
+}
+
+.shopjackets {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Shop Coats & Jackets end */
+
+footer {
+  width: 100vw;
+  background-color: black;
+  color: white;
+  margin: 100px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+footer h6 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+footer input {
+  width: 70%;
+  padding: 20px;
+  margin: 20px 0 0 0;
+}
+
+.copy {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  /* nav */
+  nav {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .container ul li {
+    margin: 13px;
+    font-size: 15px;
+  }
+
+  .nav-icons {
+    margin: 25px 0;
+  }
+
+  .nav-icons i {
+    margin: 0px 10px;
+  }
+
+  /* hero */
+
+.hero-cont {
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: whitesmoke;
+    padding: 0;
+  }
+
+  .hero-text{
+    padding: 40px  0 0 0;
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+  }
+
+  .hero-text h6 {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 5px;
+  }
+
+  /* img section */
+  .img-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .img-section img {
+    width: 100%;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+  /* New Arrivals */
+
+  .new-arrivals {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* shop olympia */
+
+  .shopolympiad {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* shop bestsellers */
+
+  .shopbestsellers {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* shop jackets */
+
+  .shopjackets {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (mim-width: 480px) and (max-width: 768px) {
+    /* nav */
+    nav {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      top: 0;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .container ul {
+      display: flex;
+      list-style: none;
+    }
+  
+    .container ul li {
+      margin: 13px;
+      font-size: 15px;
+    }
+  
+    .nav-icons {
+      margin: 25px 0;
+    }
+  
+    .nav-icons i {
+      margin: 0px 10px;
+    }
+  
+    /* hero */
+  .hero-cont {
+      background-size: cover;
+      height: 50vh;
+      width: 100vw;
+      color: whitesmoke;
+      padding: 0;
+    }
+  
+    .hero-text{
+      padding: 40px  0 0 0;
+    }
+  
+    .hero-text h2 {
+      font-size: 30px;
+    }
+  
+    .hero-text h6 {
+      font-size: 15px;
+      font-weight: 300;
+      margin: 5px;
+    }
+  
+    /* img section */
+    .img-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 80px;
+    }
+  
+    .img-section img {
+      width: 100%;
+    }
+  
+    .details {
+      text-align: center;
+    }
+  
+    /* New Arrivals */
+  
+    .new-arrivals {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* shop olympia */
+  
+    .shopolympiad {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* shop bestsellers */
+  
+    .shopbestsellers {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* shop jackets */
+  
+    .shopjackets {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }
+  
